@@ -9,16 +9,76 @@ html {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
 
-/*  Set the font */
 body {
   font-family: "Helvetica", sans-serif;
 }
 
-/* STYLES */
-/* Write your CSS below */
+ul, ol {
+  font-weight: lighter;
+  padding: 10px 130px 0 130px;
+  font-size: 20px;
+}
+
+.apples {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(apple-pie.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.apples h1 {
+  font-weight: lighter;
+  font-size: 110px;
+  color: white;
+  text-align: center;
+  padding: 300px 0;
+}
+
+.story {
+  padding: 80px 100px 0 100px;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: "Helvetica", sans-serif;
+}
+
+.photos {
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+hr {
+  width: 90%;
+}
+
+.listing {
+  font-size: 40px;
+  padding: 20px 100px 0 100px;
+  font-weight: lighter;
+  font-family: "Helvetica", sans-serif;
+}
+
+
+ol { 
+  list-style: none;
+}
+
+ol > li {
+  counter-increment: listcounter;
+}
+
+ol > li::before {
+  content: counter(listcounter) ")";
+}
